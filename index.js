@@ -17,7 +17,7 @@ bot.on("callback_query", function (query) {
         bot.answerCallbackQuery(query.id, "Sorry, '" + query.game_short_name + "' is not available.");
     } else {
         queries[query.id] = query;
-        let gameurl = "http://t.me/TatarTourism_bot";
+        let gameurl = "https://sergeygordee.github.io/TatarTourism/";
         bot.answerCallbackQuery({
             callback_query_id: query.id,
             url: gameurl
